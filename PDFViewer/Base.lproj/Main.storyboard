@@ -101,11 +101,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="b00k" translatesAutoresizingMaskIntoConstraints="NO" id="bL4-EE-4Sn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bL4-EE-4Sn">
                                 <rect key="frame" x="238" y="305" width="292" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="42k-m3-j5E"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LTG" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-N0-6T2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LTG" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-N0-6T2">
                                 <rect key="frame" x="264" y="561" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bYW-rb-hcd"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQu-dw-0PD" customClass="MyButton" customModule="PDFViewer" customModuleProvider="target">
                                 <rect key="frame" x="303" y="805" width="162" height="38"/>
@@ -126,7 +132,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GQu-dw-0PD" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="Dya-qo-XDB"/>
+                            <constraint firstItem="bL4-EE-4Sn" firstAttribute="leading" secondItem="UA3-nz-pnt" secondAttribute="leading" constant="238" id="FO3-gw-8nf"/>
+                            <constraint firstItem="bL4-EE-4Sn" firstAttribute="top" secondItem="UA3-nz-pnt" secondAttribute="top" constant="305" id="Uvr-6P-9oc"/>
+                            <constraint firstItem="Ggg-N0-6T2" firstAttribute="top" secondItem="UA3-nz-pnt" secondAttribute="top" constant="561" id="XWo-wp-2Du"/>
                             <constraint firstItem="Ggg-N0-6T2" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="bpx-2G-EwB"/>
+                            <constraint firstItem="Ggg-N0-6T2" firstAttribute="leading" secondItem="UA3-nz-pnt" secondAttribute="leading" constant="264" id="djB-2v-Eqs"/>
                             <constraint firstItem="bL4-EE-4Sn" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="k09-89-rDt"/>
                             <constraint firstItem="UA3-nz-pnt" firstAttribute="bottom" secondItem="GQu-dw-0PD" secondAttribute="bottom" constant="181" id="wj5-Ht-5Xb"/>
                         </constraints>
@@ -159,6 +169,6 @@
     </scenes>
     <resources>
         <image name="LTG" width="1005" height="179"/>
-        <image name="b00k" width="280" height="330"/>
+        <image name="logo" width="374" height="441"/>
     </resources>
 </document>
