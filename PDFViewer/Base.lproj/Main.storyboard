@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bnu-f7-qFd">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PDFViewer-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PDFViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="928"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJI-Ei-Wrb" customClass="PDFView">
+                                <rect key="frame" x="80" y="0.0" width="632" height="928"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="noC-sP-Fc7" appends="YES" id="ZCc-DH-5H8"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kse-f4-iqJ" customClass="PDFThumbnailView">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="928"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="wgi-mx-vif"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="noC-sP-Fc7" appends="YES" id="9qM-UY-FT7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kse-f4-iqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7o3-hM-u4t"/>
+                            <constraint firstItem="MJI-Ei-Wrb" firstAttribute="leading" secondItem="kse-f4-iqJ" secondAttribute="trailing" id="Gsj-qt-AeV"/>
+                            <constraint firstItem="MJI-Ei-Wrb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LH1-RR-EZg"/>
+                            <constraint firstItem="kse-f4-iqJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V1I-Ss-in4"/>
+                            <constraint firstItem="MJI-Ei-Wrb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gWX-Hg-cI9"/>
+                            <constraint firstItem="MJI-Ei-Wrb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jrA-ZK-QuM"/>
+                            <constraint firstItem="kse-f4-iqJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="n3O-6g-Las"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PDFViewer" id="hlZ-Fe-3gi">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Sidebar" id="YbC-eA-Drz">
+                                <connections>
+                                    <action selector="sidebarTapped:" destination="BYZ-38-t0r" id="ofC-52-Q6p"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem id="35p-bI-9sw">
+                                <connections>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" id="Sdm-W8-47s"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem id="nAv-yn-oxI">
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" id="Vs2-SQ-aI4"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem id="iyF-hc-xYD">
+                                <connections>
+                                    <action selector="previousTapped:" destination="BYZ-38-t0r" id="KyR-cd-2Ch"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AppTitle" destination="hlZ-Fe-3gi" id="tLj-bq-baO"/>
+                        <outlet property="appTitle" destination="hlZ-Fe-3gi" id="Ac5-QK-Uf7"/>
+                        <outlet property="nextButton" destination="nAv-yn-oxI" id="MmF-n3-pbZ"/>
+                        <outlet property="pdfThumbnailView" destination="kse-f4-iqJ" id="ZqN-Ls-ugM"/>
+                        <outlet property="pdfView" destination="MJI-Ei-Wrb" id="9uZ-k4-EgR"/>
+                        <outlet property="previousButton" destination="iyF-hc-xYD" id="x0A-Pv-Mei"/>
+                        <outlet property="sidebarLeadingConstraint" destination="7o3-hM-u4t" id="4g2-Q6-o8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="noC-sP-Fc7">
+                    <connections>
+                        <action selector="handleTapWithRecognizer:" destination="BYZ-38-t0r" id="HaV-wU-tEM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="CPo-BA-hGj">
+            <objects>
+                <viewController id="Bnu-f7-qFd" customClass="EntryViewController" customModule="PDFViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B9i-6B-Tis">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="b00k" translatesAutoresizingMaskIntoConstraints="NO" id="bL4-EE-4Sn">
+                                <rect key="frame" x="238" y="305" width="292" height="262"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LTG" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-N0-6T2">
+                                <rect key="frame" x="264" y="561" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQu-dw-0PD" customClass="MyButton" customModule="PDFViewer" customModuleProvider="target">
+                                <rect key="frame" x="303" y="805" width="162" height="38"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.94122419815969116" blue="0.24315538945155132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="sKh-cY-rNZ" kind="show" id="cMW-JY-rvd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GQu-dw-0PD" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="Dya-qo-XDB"/>
+                            <constraint firstItem="Ggg-N0-6T2" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="bpx-2G-EwB"/>
+                            <constraint firstItem="bL4-EE-4Sn" firstAttribute="centerX" secondItem="UA3-nz-pnt" secondAttribute="centerX" id="k09-89-rDt"/>
+                            <constraint firstItem="UA3-nz-pnt" firstAttribute="bottom" secondItem="GQu-dw-0PD" secondAttribute="bottom" constant="181" id="wj5-Ht-5Xb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UA3-nz-pnt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Byp-Ca-ajI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqE-3N-Ovl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1612.5" y="133.0078125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dbz-5X-cqo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sKh-cY-rNZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="o4c-12-2il">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t2z-vl-kaA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVq-TD-gp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LTG" width="1005" height="179"/>
+        <image name="b00k" width="280" height="330"/>
+    </resources>
+</document>

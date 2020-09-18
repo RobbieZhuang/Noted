@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>2A16C32B-A619-44FD-AC3E-3BD570BEB120</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>2A16C32B-A619-44FD-AC3E-3BD570BEB120.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>PDFViewer-bzppiqmyiablidhjunmvdnmjpbag</string>
+			<key>timeStartedRecording</key>
+			<real>564034758.04908299</real>
+			<key>timeStoppedRecording</key>
+			<real>564034758.94862795</real>
+			<key>title</key>
+			<string>Build target PDFViewer</string>
+			<key>uniqueIdentifier</key>
+			<string>2A16C32B-A619-44FD-AC3E-3BD570BEB120</string>
+		</dict>
+		<key>3A15BDBE-E5C0-498A-940C-0CB2BAE36FEA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>3A15BDBE-E5C0-498A-940C-0CB2BAE36FEA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Pods-PDFViewer-fgcdlphrjrnqwogwdjdtwtehkzzj</string>
+			<key>timeStartedRecording</key>
+			<real>564034391.76168096</real>
+			<key>timeStoppedRecording</key>
+			<real>564034391.77400005</real>
+			<key>title</key>
+			<string>Build target Pods-PDFViewer</string>
+			<key>uniqueIdentifier</key>
+			<string>3A15BDBE-E5C0-498A-940C-0CB2BAE36FEA</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

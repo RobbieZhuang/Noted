@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>2B90E56F-505D-4C19-A6B7-B2CEFA1B5E7D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2B90E56F-505D-4C19-A6B7-B2CEFA1B5E7D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>PDFViewer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PDFViewer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PDFViewer</string>
+			<key>timeStartedRecording</key>
+			<real>564024983.091802</real>
+			<key>timeStoppedRecording</key>
+			<real>564025301.38766396</real>
+			<key>title</key>
+			<string>Debug PDFViewer</string>
+			<key>uniqueIdentifier</key>
+			<string>2B90E56F-505D-4C19-A6B7-B2CEFA1B5E7D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

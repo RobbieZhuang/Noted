@@ -1,0 +1,50 @@
+PODS:
+  - CardParts (3.1.3):
+    - RxCocoa (~> 5.0)
+    - RxDataSources (~> 4.0)
+    - RxGesture (~> 3.0)
+    - RxSwift (~> 5.0)
+  - Differentiator (4.0.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - Starscream (3.0.6)
+
+DEPENDENCIES:
+  - CardParts
+  - Starscream (~> 3.0.2)
+
+SPEC REPOS:
+  trunk:
+    - CardParts
+    - Differentiator
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - Starscream
+
+SPEC CHECKSUMS:
+  CardParts: 9d54b5fae9534dac0f8f9ddf3f78132a9b3de3a0
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+
+PODFILE CHECKSUM: 576eb8788e05ab4277f5d03f253415460752a4c0
+
+COCOAPODS: 1.9.3

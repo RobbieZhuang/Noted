@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "9609c7f5093ad2e868e4e794b161c3cc"
+build_time: [1542336103, 464201000]
+inputs:
+  "/Users/facebook/Desktop/PDFViewer/Pods/Starscream/Source/SSLSecurity.swift": [1542335272, 0]
+  "/Users/facebook/Desktop/PDFViewer/Pods/Starscream/Source/WebSocket.swift": !dirty [1542335272, 0]

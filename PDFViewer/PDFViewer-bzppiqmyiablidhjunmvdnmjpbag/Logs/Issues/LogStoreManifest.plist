@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>E44B5889-D208-4600-A5A7-11577EDAE6AA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>E44B5889-D208-4600-A5A7-11577EDAE6AA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>PDFViewer-bzppiqmyiablidhjunmvdnmjpbag</string>
+			<key>timeStartedRecording</key>
+			<real>564034385.14453602</real>
+			<key>timeStoppedRecording</key>
+			<real>564034386.38466096</real>
+			<key>title</key>
+			<string>Build target PDFViewer</string>
+			<key>uniqueIdentifier</key>
+			<string>E44B5889-D208-4600-A5A7-11577EDAE6AA</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

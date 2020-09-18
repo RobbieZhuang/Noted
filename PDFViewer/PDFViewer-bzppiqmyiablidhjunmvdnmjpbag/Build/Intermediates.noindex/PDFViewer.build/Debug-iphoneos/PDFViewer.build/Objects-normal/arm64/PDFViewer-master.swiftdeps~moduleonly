@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "8df8dcf9505d52422d9814af66f06280"
+build_time: [1542341585, 889705000]
+inputs:
+  "/Users/facebook/Desktop/PDFViewer/PDFViewer/ViewController.swift": !dirty [1542341256, 0]
+  "/Users/facebook/Desktop/PDFViewer/PDFViewer/AppDelegate.swift": !dirty [1538353836, 0]
